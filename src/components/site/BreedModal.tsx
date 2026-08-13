@@ -24,12 +24,12 @@ export function BreedModal({ breed, onClose }: BreedModalProps) {
 
   return (
     <Dialog open={!!breed} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-2xl overflow-hidden p-0 rounded-3xl border-border bg-card shadow-2xl">
+      <DialogContent className="w-[94vw] max-w-2xl max-h-[90vh] overflow-y-auto p-0 rounded-3xl border-border bg-card shadow-2xl">
         <div className="relative">
           <img
             src={breed.image}
             alt={breed.name}
-            className="h-72 w-full object-cover"
+            className="h-56 sm:h-72 w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           
