@@ -65,9 +65,21 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <p className="mt-10 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Puppy ZOO. All rights reserved.
-      </p>
+      <div className="mt-10 flex flex-col items-center justify-center gap-2 text-center text-sm text-muted-foreground sm:flex-row sm:gap-4">
+        <p>© {new Date().getFullYear()} Puppy ZOO. All rights reserved.</p>
+        <span className="hidden sm:inline">•</span>
+        <p>
+          Powered by{" "}
+          <a
+            href="https://www.nexcoretech.online"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-foreground transition-colors hover:text-primary hover:underline"
+          >
+            NexCore Technologies
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
