@@ -162,7 +162,7 @@ function WhatsAppCard({ chat }: { chat: Chat }) {
               <div key={i} className="flex flex-col items-start gap-0.5">
                 <div className="relative max-w-[65%] overflow-hidden rounded-2xl rounded-tl-sm border border-white/5"
                   style={{ background: "#202c33" }}>
-                  <img src={msg.image} alt="Customer photo" className="h-40 w-full object-cover object-top" />
+                  <img src={msg.image} alt={`Happy customer with their new ${chat.breed} puppy from Puppy ZOO`} className="h-40 w-full object-cover object-top" />
                   <span className="absolute bottom-1.5 right-2 text-[10px] text-white/60">{msg.time}</span>
                 </div>
                 {msg.liked && <span className="ml-2 text-base">❤️</span>}

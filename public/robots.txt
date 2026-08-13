@@ -1,3 +1,6 @@
+# Sitemap location
+Sitemap: https://puppyzoo.in/sitemap.xml
+
 User-agent: Googlebot
 Allow: /
 

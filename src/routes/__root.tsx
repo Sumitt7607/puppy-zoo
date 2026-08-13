@@ -76,18 +76,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=5" },
       { title: "Puppy ZOO — Buy Healthy Puppies & Dogs Online in India" },
       {
         name: "description",
         content:
-          "Puppy ZOO connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery.",
+          "Puppy ZOO connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery and free vet support.",
+      },
+      {
+        name: "keywords",
+        content:
+          "buy puppies online india, kci certified puppies, golden retriever puppy price india, shih tzu puppy buy, dog breeders india, pet store online, buy dogs online india, vaccinated puppies, puppy zoo",
       },
       { name: "author", content: "Puppy ZOO" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { name: "theme-color", content: "#0f172a" },
+      { name: "geo.region", content: "IN" },
+      { name: "geo.placename", content: "India" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Puppy ZOO" },
+      { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@PuppyZooIndia" },
     ],
     links: [
+      { rel: "canonical", href: "https://puppyzoo.in/" },
+      { rel: "manifest", href: "/site.webmanifest" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -101,6 +115,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "shortcut icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "apple-touch-icon", href: "/favicon.png" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "PetStore",
+          "name": "Puppy ZOO",
+          "url": "https://puppyzoo.in",
+          "logo": "https://puppyzoo.in/favicon.png",
+          "image": "https://puppyzoo.in/favicon.png",
+          "description": "Puppy ZOO connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery and free vet support.",
+          "telephone": "+919310025055",
+          "priceRange": "₹₹",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN",
+            "addressRegion": "India"
+          },
+          "openingHours": "Mo-Su 09:00-21:00",
+          "sameAs": [
+            "https://facebook.com",
+            "https://instagram.com"
+          ]
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Puppy ZOO",
+          "url": "https://puppyzoo.in",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://puppyzoo.in/#breeds?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }),
+      },
     ],
   }),
 
