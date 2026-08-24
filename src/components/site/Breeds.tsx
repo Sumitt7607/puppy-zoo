@@ -180,14 +180,14 @@ function BreedCard({ breed, onSelect }: { breed: Breed; onSelect: () => void }) 
         <div className="flex gap-2.5 pt-2">
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-              `Hi Puppy ZOO, I would like to book a live video call for the ${breed.name} puppy.`
+              `Hi Puppy ZOO, I would like to check the price and details for the ${breed.name} puppy.`
             )}`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-3 py-2.5 text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105"
           >
-            <MessageCircle className="size-4" /> Book a Live Call
+            <MessageCircle className="size-4" /> View Price
           </a>
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(

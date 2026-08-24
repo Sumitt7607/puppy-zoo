@@ -85,13 +85,13 @@ export function BreedModal({ breed, onClose }: BreedModalProps) {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                `Hi Puppy ZOO, I would like to book a live video call for the ${breed.name} puppy.`
+                `Hi Puppy ZOO, I would like to check the price and details for the ${breed.name} puppy.`
               )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-6 py-3.5 font-display text-base font-extrabold text-white shadow-lg transition-transform hover:scale-105"
             >
-              <MessageCircle className="size-5" /> Book a Live Call
+              <MessageCircle className="size-5" /> View Price
             </a>
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
