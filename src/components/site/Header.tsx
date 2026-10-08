@@ -188,9 +188,16 @@ export function Header({
                           {breed.breedLabel ?? breed.name} • {breed.age ?? "8 Weeks"}
                         </div>
                       </div>
-                      <span className="rounded bg-secondary/10 px-2 py-1 text-xs font-bold text-secondary uppercase">
-                        {breed.category}
-                      </span>
+                      <div className="flex flex-col items-end gap-1">
+                        <span className="rounded bg-secondary/10 px-2 py-0.5 text-[10px] font-extrabold text-secondary uppercase">
+                          {breed.category}
+                        </span>
+                        {breed.price ? (
+                          <span className="rounded-md bg-orange-500/10 px-1.5 py-0.5 text-[11px] font-black text-orange-600">
+                            ₹{breed.price.toLocaleString("en-IN")}
+                          </span>
+                        ) : null}
+                      </div>
                     </button>
                   ))}
                   <button

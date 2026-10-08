@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dog, Calendar, Phone, MessageCircle, Search, X, Sparkles, Eye, ShieldCheck } from "lucide-react";
+import { Dog, Calendar, Phone, MessageCircle, Search, X, Sparkles, Eye, ShieldCheck, Tag } from "lucide-react";
 import { SectionTab } from "./SectionTab";
 import { BREEDS_DATA, Breed } from "@/data/breedsData";
 import { BreedModal } from "./BreedModal";
@@ -176,29 +176,39 @@ function BreedCard({ breed, onSelect }: { breed: Breed; onSelect: () => void }) 
           </p>
         </div>
 
+        {/* Pricing Bar (Orange Colour Tab) */}
+        {breed.price ? (
+          <div className="flex items-center justify-between rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-500 px-3.5 py-2 text-white shadow-md shadow-orange-500/20">
+            <span className="flex items-center gap-1.5 text-xs font-black tracking-wide uppercase">
+              <Tag className="size-3.5 fill-white/20" /> Starting From
+            </span>
+            <span className="font-display text-base font-black tracking-tight drop-shadow-sm">
+              ₹{breed.price.toLocaleString("en-IN")}
+            </span>
+          </div>
+        ) : null}
+
         {/* CTA Buttons */}
         <div className="flex gap-2.5 pt-2">
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-              `Hi Puppy ZOO, I would like to check the price and details for the ${breed.name} puppy.`
+              breed.price
+                ? `Hi Puppy ZOO, I would like to chat about the ${breed.name} puppy (listed starting from ₹${breed.price.toLocaleString("en-IN")}).`
+                : `Hi Puppy ZOO, I would like to chat about the ${breed.name} puppy.`
             )}`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-3 py-2.5 text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105"
           >
-            <MessageCircle className="size-4" /> View Price
+            <MessageCircle className="size-4" /> Chat Now
           </a>
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-              `Hi Puppy ZOO, please send me more images and videos of the ${breed.name} puppy.`
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`tel:${PHONE_NUMBER}`}
             onClick={(e) => e.stopPropagation()}
             className="flex flex-1 items-center justify-center gap-1.5 rounded-xl border border-border bg-card px-3 py-2.5 text-xs font-extrabold text-foreground transition-colors hover:border-primary hover:text-primary"
           >
-            Get More Images
+            <Phone className="size-3.5 text-primary" /> Call Now
           </a>
         </div>
       </div>

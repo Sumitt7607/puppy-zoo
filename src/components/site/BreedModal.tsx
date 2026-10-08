@@ -6,7 +6,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import { Dog, Calendar, Phone, MessageCircle, ShieldCheck, Heart, Sparkles, CheckCircle2 } from "lucide-react";
+import { Dog, Calendar, Phone, MessageCircle, ShieldCheck, Heart, Sparkles, CheckCircle2, Tag } from "lucide-react";
 
 interface BreedModalProps {
   breed: Breed | null;
@@ -81,27 +81,40 @@ export function BreedModal({ breed, onClose }: BreedModalProps) {
             </ul>
           </div>
 
+          {/* Pricing Bar (Orange Colour Tab) */}
+          {breed.price ? (
+            <div className="flex items-center justify-between rounded-2xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-500 px-5 py-3 text-white shadow-lg shadow-orange-500/25">
+              <div className="flex items-center gap-2">
+                <Tag className="size-4 fill-white/20" />
+                <span className="text-xs font-black uppercase tracking-wider">
+                  Starting Price
+                </span>
+              </div>
+              <span className="font-display text-xl font-black">
+                ₹{breed.price.toLocaleString("en-IN")}
+              </span>
+            </div>
+          ) : null}
+
           {/* CTA Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                `Hi Puppy ZOO, I would like to check the price and details for the ${breed.name} puppy.`
+                breed.price
+                  ? `Hi Puppy ZOO, I would like to chat about the ${breed.name} puppy (listed starting from ₹${breed.price.toLocaleString("en-IN")}).`
+                  : `Hi Puppy ZOO, I would like to chat about the ${breed.name} puppy.`
               )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-6 py-3.5 font-display text-base font-extrabold text-white shadow-lg transition-transform hover:scale-105"
             >
-              <MessageCircle className="size-5" /> View Price
+              <MessageCircle className="size-5" /> Chat Now
             </a>
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                `Hi Puppy ZOO, please send me more images and videos of the ${breed.name} puppy.`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`tel:${PHONE_NUMBER}`}
               className="flex flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-border bg-card px-6 py-3.5 font-display text-base font-extrabold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
-              Get More Images
+              <Phone className="size-5 text-primary" /> Call Now
             </a>
           </div>
         </div>
