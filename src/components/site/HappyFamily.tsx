@@ -289,7 +289,7 @@ export function HappyFamily() {
           {/* Mobile: single card */}
           <div className="flex lg:hidden justify-center">
             <div className="w-full max-w-sm">
-              <WhatsAppCard chat={chats[active]} />
+              <WhatsAppCard chat={chats[active]!} />
             </div>
           </div>
 
