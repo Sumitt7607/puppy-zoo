@@ -14,9 +14,9 @@ import { ContactCta } from "@/components/site/ContactCta";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppWidget } from "@/components/site/WhatsAppWidget";
 
-const title = "Puppy Sale Point — Buy Purebred Puppies & Dogs Online in India | KCI Certified";
+const title = "Puppies For Sale Online — Puppy Sale Point | Healthy Purebred Puppies in India";
 const description =
-  "Find healthy, KCI-certified purebred puppies for sale at Puppy Sale Point (puppiesforsale.shop). 30-point pediatric vet screening, live video calls, and pan-India safe doorstep delivery.";
+  "Looking for puppies for sale? Puppy Sale Point (puppiesforsale.shop) offers 100% healthy, KCI-certified purebred puppies for sale online. 30-point vet check, microchip & safe pan-India delivery.";
 const siteUrl = "https://puppiesforsale.shop";
 const ogImage = "https://puppiesforsale.shop/favicon.png";
 
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "puppy sale point, puppies for sale, puppiesforsale.shop, buy puppies online india, kci certified puppies, golden retriever puppy price, shih tzu puppy buy, dog breeders india, pet store near me, buy dogs online, beagle puppy india, husky puppy india, german shepherd puppy",
+          "puppies for sale, puppies for sale near me, puppies for sale in india, puppy sale point, puppiesforsale.shop, buy puppies online india, kci certified puppies for sale, golden retriever puppies for sale, shih tzu puppies for sale, toy poodle puppies for sale, labrador puppies for sale, beagle puppies for sale, husky puppies for sale",
       },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: ogImage },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Puppy Sale Point - Healthy Puppies & Dogs Online in India" },
+      { property: "og:image:alt", content: "Puppies For Sale at Puppy Sale Point - Healthy Dogs Online in India" },
       { property: "og:site_name", content: "Puppy Sale Point" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
@@ -53,34 +53,42 @@ export const Route = createFileRoute("/")({
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Are Puppy Sale Point puppies KCI registered?",
+              "name": "Where can I find healthy, genuine puppies for sale in India?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, most of our puppies come with KCI registration and a verified breed certificate along with a microchip."
+                "text": "Puppy Sale Point (puppiesforsale.shop) is India's trusted platform for purebred puppies for sale. We offer healthy, KCI-certified puppies across Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, and 150+ cities with safe doorstep delivery and veterinary health records."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you deliver outside Delhi NCR?",
+              "name": "Are Puppy Sale Point puppies for sale KCI registered?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We deliver pan India by road and air with IATA-approved crates and a trained pet handler."
+                "text": "Yes, most of our puppies for sale come with KCI registration and a verified breed pedigree certificate along with an ISO microchip."
               }
             },
             {
               "@type": "Question",
-              "name": "What health guarantee do I get?",
+              "name": "Do you deliver puppies outside Delhi NCR?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Every puppy is vet-checked and vaccinated, and comes with a written health assurance plus a free vet consultation."
+                "text": "We deliver puppies for sale across all of India by road and air with IATA-approved crates and an experienced pet handler."
               }
             },
             {
               "@type": "Question",
-              "name": "Can I see the puppy before booking?",
+              "name": "What health guarantee do I get when I buy a puppy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely. We arrange a live video call with the puppy and its parents before you pay anything."
+                "text": "Every puppy for sale is vet-checked and vaccinated, and comes with a written health assurance plus a free vet consultation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I see the puppy on a live video call before booking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We arrange a live interactive video call with the puppy and its parents before you make any payment."
               }
             }
           ]
@@ -91,49 +99,49 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          "name": "Available Purebred Puppies in India - Puppy Sale Point",
-          "description": "Ethically bred purebred puppies at Puppy Sale Point including Shih Tzu, Golden Retriever, Labrador Retriever, German Shepherd, Siberian Husky, Toy Poodle, Beagle, and Pomeranian.",
+          "name": "Purebred Puppies For Sale in India - Puppy Sale Point",
+          "description": "Ethically bred purebred puppies for sale at Puppy Sale Point including Shih Tzu, Golden Retriever, Labrador Retriever, German Shepherd, Siberian Husky, Toy Poodle, Beagle, and Pomeranian.",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Shih Tzu Puppy",
+              "name": "Shih Tzu Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Golden Retriever Puppy",
+              "name": "Golden Retriever Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Labrador Retriever Puppy",
+              "name": "Labrador Retriever Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "German Shepherd Puppy",
+              "name": "German Shepherd Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "name": "Siberian Husky Puppy",
+              "name": "Siberian Husky Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 6,
-              "name": "Toy Poodle Puppy",
+              "name": "Toy Poodle Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 7,
-              "name": "Beagle Puppy",
+              "name": "Beagle Puppies For Sale",
               "url": "https://puppiesforsale.shop/#breeds"
             }
           ]

@@ -38,7 +38,7 @@ export function Breeds({
   return (
     <section id="breeds" className="py-16 scroll-mt-24">
       <SectionTab subtitle="Explore 100% purebred, vaccinated puppies for sale across India. Every puppy comes with KCI papers, microchip, health card, and pan-India safe delivery.">
-        Buy Purebred Puppies Online
+        Puppies For Sale — Purebred Breeds
       </SectionTab>
 
       {/* Search Active Notification Bar */}
@@ -108,7 +108,7 @@ function BreedCard({ breed, onSelect }: { breed: Breed; onSelect: () => void }) 
       <div className="relative overflow-hidden">
         <img
           src={breed.image}
-          alt={`${breed.name} puppy at Puppy Sale Point`}
+          alt={`${breed.name} puppies for sale at Puppy Sale Point`}
           width={768}
           height={768}
           loading="lazy"

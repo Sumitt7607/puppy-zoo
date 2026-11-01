@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=5" },
-      { title: "Puppy Sale Point — Buy Purebred Puppies & Dogs Online | KCI Certified" },
+      { title: "Puppies For Sale — Puppy Sale Point | Buy Purebred Dogs Online" },
       {
         name: "description",
         content:
-          "Puppy Sale Point (puppiesforsale.shop) connects loving families with ethically nurtured, vet-certified purebred puppies across India. Safe doorstep delivery, live video calls & lifetime care.",
+          "Looking for puppies for sale? Puppy Sale Point (puppiesforsale.shop) connects loving families with 100% healthy, KCI-certified purebred puppies for sale across India with doorstep delivery & vet check.",
       },
       {
         name: "keywords",
         content:
-          "puppy sale point, puppies for sale, puppiesforsale.shop, buy puppies online india, kci certified puppies, purebred puppies, buy dogs online, golden retriever puppy, toy poodle puppy, shih tzu boutique, beagle puppy india, german shepherd puppy, dog breeders india, doorstep pet delivery",
+          "puppies for sale, puppies for sale near me, puppy sale point, puppiesforsale.shop, buy puppies online, buy puppies india, purebred puppies for sale, golden retriever puppies for sale, shih tzu puppies for sale, toy poodle puppies for sale, labrador puppies for sale, beagle puppies for sale, kci certified puppies",
       },
       { name: "author", content: "Puppy Sale Point" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
@@ -122,13 +122,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "PetStore",
-          "name": "Puppy Sale Point",
+          "name": "Puppy Sale Point - Puppies For Sale",
           "url": "https://puppiesforsale.shop",
           "logo": "https://puppiesforsale.shop/favicon.png",
           "image": "https://puppiesforsale.shop/favicon.png",
-          "description": "Puppy Sale Point connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery and free vet support.",
+          "description": "Puppy Sale Point connects you with ethically bred, vaccinated and KCI-certified puppies for sale with pan-India safe delivery and lifetime vet support.",
           "telephone": "+919310025055",
           "priceRange": "₹₹",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.95",
+            "reviewCount": "1240"
+          },
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "IN",
@@ -146,7 +151,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Puppy Sale Point",
+          "name": "Puppy Sale Point - Puppies For Sale",
           "url": "https://puppiesforsale.shop",
           "potentialAction": {
             "@type": "SearchAction",

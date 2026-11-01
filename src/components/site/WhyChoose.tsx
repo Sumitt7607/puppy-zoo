@@ -43,8 +43,8 @@ const items = [
 export function WhyChoose() {
   return (
     <section id="why-choose" className="bg-cream/60 py-16 scroll-mt-20 border-y border-border">
-      <SectionTab subtitle="Thoughtful ethical breeding, luxury puppy pampering, certified genetics, and lifelong parenting support.">
-        The Boutique Standard
+      <SectionTab subtitle="Why choose our puppies for sale: thoughtful ethical breeding, certified KCI genetics, 30-point pediatric check, and lifelong parenting support.">
+        Why Buy Puppies For Sale From Us
       </SectionTab>
 
       <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">

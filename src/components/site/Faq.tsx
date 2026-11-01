@@ -9,8 +9,12 @@ import { Sparkles } from "lucide-react";
 
 const faqs = [
   {
-    q: "Are Puppy Sale Point puppies KCI registered and microchipped?",
-    a: "Yes. All our purebred puppies come with official Kennel Club of India (KCI) documentation, verified pedigree records, and an international ISO microchip registered in your family's name for lifelong safety and authenticity.",
+    q: "Where can I find healthy, genuine puppies for sale in India?",
+    a: "Puppy Sale Point (puppiesforsale.shop) is India's premier destination for purebred puppies for sale. We offer healthy, KCI-certified puppies across Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, and 150+ cities with safe doorstep delivery and veterinary health records.",
+  },
+  {
+    q: "Are Puppy Sale Point puppies for sale KCI registered and microchipped?",
+    a: "Yes. All our purebred puppies for sale come with official Kennel Club of India (KCI) documentation, verified pedigree records, and an international ISO microchip registered in your family's name for lifelong safety and authenticity.",
   },
   {
     q: "What does the 30-Point Pediatric Health Check include?",
@@ -37,8 +41,8 @@ const faqs = [
 export function Faq() {
   return (
     <section id="faq" className="py-16 scroll-mt-20">
-      <SectionTab subtitle="Answers to common questions regarding health assurance, ethical nurseries, video calls, and white-glove doorstep delivery.">
-        Frequently Asked Questions
+      <SectionTab subtitle="Answers to common questions regarding buying puppies for sale, health assurance, ethical nurseries, video calls, and doorstep delivery.">
+        Puppies For Sale — FAQs
       </SectionTab>
       <div className="mx-auto mt-12 max-w-3xl px-4">
         <Accordion type="single" collapsible className="space-y-3.5">

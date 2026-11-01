@@ -31,8 +31,8 @@ const steps = [
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="py-16 scroll-mt-20">
-      <SectionTab subtitle="A transparent, hassle-free 4-step process to buy your puppy online with total security and zero advance fraud.">
-        How To Buy Your Puppy Online
+      <SectionTab subtitle="A transparent, hassle-free 4-step process to buy puppies for sale online with total security and zero advance fraud.">
+        How to Buy Puppies for Sale Online
       </SectionTab>
 
       <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -154,16 +154,16 @@ export function Hero() {
 
             {/* Main Festive Headline */}
             <h1 className="mt-3.5 font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-foreground leading-[1.08]">
-              BRING HOME LAXMI & JOY{" "}
+              PUPPIES FOR SALE:{" "}
               <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 bg-clip-text text-transparent">
-                THIS DIWALI! 🪔
+                PUREBRED, HEALTHY & VET CERTIFIED 🐾
               </span>
             </h1>
 
             {/* Sale Subtitle */}
             <p className="mt-3.5 text-base sm:text-lg font-medium leading-relaxed text-muted-foreground">
-              Buy 100% purebred, vaccinated, and KCI-certified puppies online in India with special Diwali festive offers.
-              Every puppy comes with a complete 30-point pediatric health certificate, microchip, and guaranteed safe doorstep delivery before Diwali!
+              Looking for <strong>puppies for sale</strong>? Puppy Sale Point offers 100% purebred, vaccinated, and KCI-certified puppies online in India with special festive offers.
+              Every puppy comes with a complete 30-point pediatric health certificate, microchip, and guaranteed safe doorstep delivery!
             </p>
 
             {/* Action Buttons */}
