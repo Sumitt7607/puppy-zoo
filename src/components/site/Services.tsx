@@ -3,10 +3,10 @@ import { SectionTab } from "./SectionTab";
 
 const services = [
   {
-    Icon: Scissors,
-    title: "In-Home Spa & Grooming",
-    text: "Certified gentle groomers bring organic botanicals, coat conditioning, and soothing paw pampering directly to your home.",
-    badge: "Pampering",
+    Icon: ShieldCheck,
+    title: "KCI Lineage & Pedigree",
+    text: "Every puppy comes with official Kennel Club of India pedigree registration and certified breed authenticity records.",
+    badge: "Verified Pedigree",
   },
   {
     Icon: Truck,

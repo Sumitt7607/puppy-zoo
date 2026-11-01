@@ -12,12 +12,13 @@ const columns = [
     ],
   },
   {
-    title: "Puppy Services",
+    title: "Popular Breeds",
     links: [
-      { label: "In-Home Spa & Grooming", href: "#support" },
-      { label: "Chaperoned Pet Travel", href: "#support" },
-      { label: "Bespoke Nutrition Kits", href: "#support" },
-      { label: "Pediatric Vet Support", href: "#support" },
+      { label: "Golden Retriever Puppies", href: "#breeds" },
+      { label: "Shih Tzu Puppies", href: "#breeds" },
+      { label: "Toy Poodle Puppies", href: "#breeds" },
+      { label: "Labrador Retriever Puppies", href: "#breeds" },
+      { label: "Siberian Husky Puppies", href: "#breeds" },
     ],
   },
   {

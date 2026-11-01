@@ -311,16 +311,6 @@ export function Header({
               </button>
             </li>
 
-            {/* Wellness Services */}
-            <li>
-              <button
-                onClick={() => scrollToSection("support")}
-                className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Puppy Care & Services
-              </button>
-            </li>
-
             {/* How It Works */}
             <li>
               <button
@@ -406,16 +396,10 @@ export function Header({
               Why Choose Us
             </button>
             <button
-              onClick={() => scrollToSection("support")}
-              className="block w-full rounded-xl px-4 py-2.5 text-left text-sm font-bold hover:bg-muted"
-            >
-              Puppy Care & Services
-            </button>
-            <button
               onClick={() => scrollToSection("how-it-works")}
               className="block w-full rounded-xl px-4 py-2.5 text-left text-sm font-bold hover:bg-muted"
             >
-              Adoption Journey
+              How To Buy
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
