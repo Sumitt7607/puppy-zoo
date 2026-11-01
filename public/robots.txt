@@ -1,5 +1,5 @@
 # Sitemap location
-Sitemap: https://puppyzoo.in/sitemap.xml
+Sitemap: https://puppiesforsale.shop/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
@@ -15,3 +15,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+

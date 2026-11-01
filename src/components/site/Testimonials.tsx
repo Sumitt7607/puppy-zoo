@@ -12,7 +12,7 @@ const reviews = [
     name: "Priya S.",
     location: "New Delhi",
     breed: "Shih Tzu Puppy",
-    text: "Welcoming our Shih Tzu through Puppy ZOO Boutique was an absolute joy. The live video call made us confident, and he arrived healthy, calm, and with his complete health passport and luxury welcome pamper kit!",
+    text: "Welcoming our Shih Tzu through Puppy Sale Point was an absolute joy. The live video call made us confident, and he arrived healthy, calm, and with his complete health passport and luxury welcome pamper kit!",
     photo: customer1,
     rating: 5,
   },
@@ -36,7 +36,7 @@ const reviews = [
     name: "Ankit & Riya",
     location: "Mumbai",
     breed: "American Bully",
-    text: "Our American Bully is healthy, beautifully socialized, and so affectionate. Puppy ZOO Boutique's parenting team still checks in on his nutrition and milestones every month.",
+    text: "Our American Bully is healthy, beautifully socialized, and so affectionate. Puppy Sale Point's parenting team still checks in on his nutrition and milestones every month.",
     photo: customer4,
     rating: 5,
   },
@@ -91,7 +91,7 @@ export function Testimonials() {
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={r.photo}
-                  alt={`${r.name} with their ${r.breed} from Puppy ZOO Boutique`}
+                  alt={`${r.name} with their ${r.breed} from Puppy Sale Point`}
                   className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

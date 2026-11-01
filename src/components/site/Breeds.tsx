@@ -108,7 +108,7 @@ function BreedCard({ breed, onSelect }: { breed: Breed; onSelect: () => void }) 
       <div className="relative overflow-hidden">
         <img
           src={breed.image}
-          alt={`${breed.name} puppy at Puppy ZOO Boutique`}
+          alt={`${breed.name} puppy at Puppy Sale Point`}
           width={768}
           height={768}
           loading="lazy"
@@ -164,7 +164,7 @@ function BreedCard({ breed, onSelect }: { breed: Breed; onSelect: () => void }) 
         <div className="flex gap-2.5 pt-1">
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-              `Hi Puppy ZOO! I would like to inquire about the ${breed.name} puppy. Could you share live photos, video & current availability?`
+              `Hi Puppy Sale Point! I would like to inquire about the ${breed.name} puppy. Could you share live photos, video & current availability?`
             )}`}
             target="_blank"
             rel="noopener noreferrer"

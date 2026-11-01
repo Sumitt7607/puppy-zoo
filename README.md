@@ -1,6 +1,6 @@
-# Puppy Zoo Central
+# Puppy Sale Point (puppiesforsale.shop)
 
-create me a website like this  puppiezo only change the name to puppiezoo also ad more sectio n keep the sam ui .
+Ethical purebred puppies & dogs platform in India with 30-point pediatric vet screening, KCI verified pedigrees, and pan-India safe doorstep delivery.
 
 This project was built with [Lovable](https://lovable.dev).
 

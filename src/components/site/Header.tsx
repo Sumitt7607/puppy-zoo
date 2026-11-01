@@ -100,10 +100,10 @@ export function Header({
             </span>
             <div className="flex flex-col">
               <span className="font-display text-2xl font-black tracking-tight leading-none text-foreground">
-                Puppy<span className="text-primary">ZOO</span>
+                Puppy <span className="text-primary">Sale Point</span>
               </span>
               <span className="text-[10px] font-bold tracking-widest uppercase text-muted-foreground">
-                Canine Boutique & Club
+                Verified Purebred Puppies
               </span>
             </div>
           </a>
@@ -215,7 +215,7 @@ export function Header({
           </button>
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-              "Hi Puppy ZOO Boutique! I'd like to book a live video playdate with available puppies."
+              "Hi Puppy Sale Point! I'd like to book a live video playdate with available puppies."
             )}`}
             target="_blank"
             rel="noopener noreferrer"

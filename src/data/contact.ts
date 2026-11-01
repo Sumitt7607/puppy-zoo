@@ -4,7 +4,7 @@ export const CONTACT_CONFIG = {
   telLink: "tel:+919310025055",
   whatsappNumber: "919310025055",
   whatsappLink: "https://wa.me/919310025055",
-  email: "hello@puppyzoo.com",
+  email: "support@puppiesforsale.shop",
 };
 
 export const PHONE_NUMBER = CONTACT_CONFIG.telLink;

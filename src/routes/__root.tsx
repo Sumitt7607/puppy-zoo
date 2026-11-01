@@ -77,30 +77,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=5" },
-      { title: "Puppy ZOO Boutique — Ethical Purebred Puppies & Lifetime Pet Wellness" },
+      { title: "Puppy Sale Point — Buy Purebred Puppies & Dogs Online | KCI Certified" },
       {
         name: "description",
         content:
-          "Puppy ZOO Boutique connects loving families with ethically nurtured, vet-certified purebred puppies. Featuring white-glove doorstep delivery and lifetime wellness support.",
+          "Puppy Sale Point (puppiesforsale.shop) connects loving families with ethically nurtured, vet-certified purebred puppies across India. Safe doorstep delivery, live video calls & lifetime care.",
       },
       {
         name: "keywords",
         content:
-          "puppy boutique india, buy purebred puppies, kci certified puppies, ethical dog breeders india, golden retriever puppy, toy poodle puppy, shih tzu boutique, doorstep pet delivery, puppy zoo boutique",
+          "puppy sale point, puppies for sale, puppiesforsale.shop, buy puppies online india, kci certified puppies, purebred puppies, buy dogs online, golden retriever puppy, toy poodle puppy, shih tzu boutique, beagle puppy india, german shepherd puppy, dog breeders india, doorstep pet delivery",
       },
-      { name: "author", content: "Puppy ZOO Boutique" },
+      { name: "author", content: "Puppy Sale Point" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "theme-color", content: "#262320" },
       { name: "geo.region", content: "IN" },
       { name: "geo.placename", content: "India" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Puppy ZOO Boutique" },
+      { property: "og:site_name", content: "Puppy Sale Point" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@PuppyZooIndia" },
+      { name: "twitter:site", content: "@PuppySalePoint" },
     ],
     links: [
-      { rel: "canonical", href: "https://puppyzoo.in/" },
+      { rel: "canonical", href: "https://puppiesforsale.shop/" },
       { rel: "manifest", href: "/site.webmanifest" },
       {
         rel: "stylesheet",
@@ -122,11 +122,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "PetStore",
-          "name": "Puppy ZOO",
-          "url": "https://puppyzoo.in",
-          "logo": "https://puppyzoo.in/favicon.png",
-          "image": "https://puppyzoo.in/favicon.png",
-          "description": "Puppy ZOO connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery and free vet support.",
+          "name": "Puppy Sale Point",
+          "url": "https://puppiesforsale.shop",
+          "logo": "https://puppiesforsale.shop/favicon.png",
+          "image": "https://puppiesforsale.shop/favicon.png",
+          "description": "Puppy Sale Point connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery and free vet support.",
           "telephone": "+919310025055",
           "priceRange": "₹₹",
           "address": {
@@ -146,11 +146,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Puppy ZOO",
-          "url": "https://puppyzoo.in",
+          "name": "Puppy Sale Point",
+          "url": "https://puppiesforsale.shop",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://puppyzoo.in/#breeds?search={search_term_string}",
+            "target": "https://puppiesforsale.shop/#breeds?search={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         }),

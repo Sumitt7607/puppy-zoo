@@ -9,7 +9,7 @@ import { Sparkles } from "lucide-react";
 
 const faqs = [
   {
-    q: "Are Puppy ZOO Boutique puppies KCI registered and microchipped?",
+    q: "Are Puppy Sale Point puppies KCI registered and microchipped?",
     a: "Yes. All our purebred puppies come with official Kennel Club of India (KCI) documentation, verified pedigree records, and an international ISO microchip registered in your family's name for lifelong safety and authenticity.",
   },
   {

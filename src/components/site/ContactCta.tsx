@@ -3,7 +3,7 @@ import { PHONE_NUMBER, WHATSAPP_NUMBER } from "@/data/contact";
 
 export function ContactCta() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Hi Puppy ZOO Boutique! I'm interested in finding my ideal puppy companion. Could you help me with available breeds and pricing?"
+    "Hi Puppy Sale Point! I'm interested in finding my ideal puppy companion. Could you help me with available breeds and pricing?"
   )}`;
 
   return (
@@ -25,7 +25,7 @@ export function ContactCta() {
         </h2>
 
         <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-navy-foreground/80 leading-relaxed font-normal">
-          Connect directly with a Puppy ZOO Boutique advisor today. We will match you with a healthy,
+          Connect directly with a Puppy Sale Point advisor today. We will match you with a healthy,
           ethically hand-raised puppy companion, schedule your live video playdate, and coordinate white-glove doorstep delivery.
         </p>
 
@@ -47,7 +47,7 @@ export function ContactCta() {
           </a>
 
           <a
-            href="mailto:support@puppyzoo.in"
+            href="mailto:support@puppiesforsale.shop"
             className="flex items-center gap-2 rounded-full border border-white/15 px-6 py-3.5 font-display text-sm sm:text-base font-semibold text-navy-foreground/90 transition-colors hover:bg-white/10"
           >
             <Mail className="size-4.5" /> Email Our Team

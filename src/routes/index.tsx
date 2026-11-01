@@ -14,11 +14,11 @@ import { ContactCta } from "@/components/site/ContactCta";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppWidget } from "@/components/site/WhatsAppWidget";
 
-const title = "Puppy ZOO Boutique — Purebred Puppies, Pet Care & Wellness in India";
+const title = "Puppy Sale Point — Buy Purebred Puppies & Dogs Online in India | KCI Certified";
 const description =
-  "Discover ethically nurtured, KCI-certified purebred puppies at Puppy ZOO Boutique. Featuring white-glove doorstep delivery, 30-point pediatric vet screening, and lifetime parenting support.";
-const siteUrl = "https://puppyzoo.in";
-const ogImage = "https://puppyzoo.in/favicon.png";
+  "Find healthy, KCI-certified purebred puppies for sale at Puppy Sale Point (puppiesforsale.shop). 30-point pediatric vet screening, live video calls, and pan-India safe doorstep delivery.";
+const siteUrl = "https://puppiesforsale.shop";
+const ogImage = "https://puppiesforsale.shop/favicon.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "buy puppies online india, kci certified puppies, golden retriever puppy price, shih tzu puppy buy, dog breeders india, pet store near me, buy dogs online, beagle puppy india, husky puppy india, german shepherd puppy",
+          "puppy sale point, puppies for sale, puppiesforsale.shop, buy puppies online india, kci certified puppies, golden retriever puppy price, shih tzu puppy buy, dog breeders india, pet store near me, buy dogs online, beagle puppy india, husky puppy india, german shepherd puppy",
       },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
@@ -37,8 +37,8 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: ogImage },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Puppy ZOO - Healthy Puppies & Dogs Online in India" },
-      { property: "og:site_name", content: "Puppy ZOO" },
+      { property: "og:image:alt", content: "Puppy Sale Point - Healthy Puppies & Dogs Online in India" },
+      { property: "og:site_name", content: "Puppy Sale Point" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/")({
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Are Puppy ZOO puppies KCI registered?",
+              "name": "Are Puppy Sale Point puppies KCI registered?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Yes, most of our puppies come with KCI registration and a verified breed certificate along with a microchip."
@@ -91,50 +91,50 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          "name": "Available Purebred Puppies in India",
-          "description": "Ethically bred purebred puppies including Shih Tzu, Golden Retriever, Labrador Retriever, German Shepherd, Siberian Husky, Toy Poodle, Beagle, and Pomeranian.",
+          "name": "Available Purebred Puppies in India - Puppy Sale Point",
+          "description": "Ethically bred purebred puppies at Puppy Sale Point including Shih Tzu, Golden Retriever, Labrador Retriever, German Shepherd, Siberian Husky, Toy Poodle, Beagle, and Pomeranian.",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
               "name": "Shih Tzu Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Golden Retriever Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Labrador Retriever Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "German Shepherd Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Siberian Husky Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "Toy Poodle Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "Beagle Puppy",
-              "url": "https://puppyzoo.in/#breeds"
+              "url": "https://puppiesforsale.shop/#breeds"
             }
           ]
         }),
