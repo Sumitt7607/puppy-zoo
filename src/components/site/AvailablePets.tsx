@@ -40,7 +40,7 @@ export function AvailablePets() {
               </span>
               <div className="absolute inset-x-3 bottom-3 flex items-center justify-between">
                 <button className="rounded-md bg-navy/70 px-3 py-2 text-xs font-bold tracking-wide text-navy-foreground">
-                  VIEW PRICE
+                  VIEW DETAILS
                 </button>
                 <span
                   className={

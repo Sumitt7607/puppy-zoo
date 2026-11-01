@@ -1,53 +1,81 @@
-import { Syringe, HeartHandshake, Home, BadgeCheck, Headset, Stethoscope } from "lucide-react";
+import { Syringe, HeartHandshake, Home, BadgeCheck, Headset, Stethoscope, Sparkles } from "lucide-react";
+import { SectionTab } from "./SectionTab";
 
 const items = [
   {
-    Icon: Syringe,
-    title: "Vaccinated",
-    text: "Up to date vaccinations with latest veterinary standards",
+    Icon: Stethoscope,
+    title: "30-Point Pediatric Screening",
+    text: "Every puppy completes a rigorous veterinary evaluation covering cardiopulmonary, orthopedic, ocular, and dental health prior to travel.",
+    badge: "Clinical Assurance",
   },
   {
     Icon: HeartHandshake,
-    title: "Ethical Breeders",
-    text: "Licensed, vetted and committed to animal welfare",
+    title: "Ethical & Cage-Free Nurseries",
+    text: "Hand-raised in loving home environments with early sensory socialization, human touch, and zero commercial confinement.",
+    badge: "Animal Welfare",
   },
-  { Icon: Home, title: "Home Delivery", text: "Pan India delivery options bringing joy to your home" },
+  {
+    Icon: Home,
+    title: "Chaperoned Doorstep Travel",
+    text: "Stress-free, climate-controlled flight or private road escort across 150+ Indian cities with a dedicated trained handler.",
+    badge: "Pan-India Travel",
+  },
   {
     Icon: BadgeCheck,
-    title: "Breed Certificate",
-    text: "Verified lineage & pedigree with included microchip",
+    title: "Verified KCI Lineage & Chip",
+    text: "Official Kennel Club of India registration, certified pedigree documentation, and pre-implanted ISO microchip.",
+    badge: "Purebred Authenticity",
   },
-  { Icon: Headset, title: "After Sales Support", text: "Expert Guidance for New Puppy Owners" },
   {
-    Icon: Stethoscope,
-    title: "Health Checked",
-    text: "Thorough health check by certified Veterinarians",
+    Icon: Headset,
+    title: "Lifetime Parenting Support",
+    text: "Direct on-demand WhatsApp access to canine nutritionists and certified behaviorists for teething, potty habits, and growth stages.",
+    badge: "Lifelong Guidance",
+  },
+  {
+    Icon: Syringe,
+    title: "Complete Medical Vaccination",
+    text: "Age-appropriate deworming, core vaccination records, and a formal written health guarantee with complimentary vet telehealth.",
+    badge: "Preventive Care",
   },
 ];
 
 export function WhyChoose() {
   return (
-    <section id="why-choose" className="bg-teal py-14 scroll-mt-20">
-      <div className="flex justify-center">
-        <h2 className="section-tab text-lg sm:text-xl">
-          W<span className="text-base">HY</span> C<span className="text-base">HOOSE</span>{" "}
-          <span className="text-secondary">Puppy</span>{" "}
-          <span className="text-primary">ZOO</span>
-        </h2>
-      </div>
-      <div className="mx-auto mt-10 grid max-w-6xl gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map(({ Icon, title, text }) => (
-          <div key={title} className="overflow-hidden rounded-lg bg-card text-center shadow-card">
-            <div className="flex h-44 items-center justify-center">
-              <Icon className="size-20 text-foreground" strokeWidth={1.25} />
+    <section id="why-choose" className="bg-cream/60 py-16 scroll-mt-20 border-y border-border">
+      <SectionTab subtitle="Thoughtful ethical breeding, luxury puppy pampering, certified genetics, and lifelong parenting support.">
+        The Boutique Standard
+      </SectionTab>
+
+      <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map(({ Icon, title, text, badge }) => (
+          <div
+            key={title}
+            className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
+          >
+            <div>
+              <div className="flex items-center justify-between">
+                <span className="flex size-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Icon className="size-7" strokeWidth={1.75} />
+                </span>
+                <span className="rounded-full bg-secondary/10 px-3 py-1 text-[11px] font-bold text-secondary uppercase tracking-wider">
+                  {badge}
+                </span>
+              </div>
+              <h3 className="mt-5 font-display text-xl font-bold text-foreground">
+                {title}
+              </h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+                {text}
+              </p>
             </div>
-            <h3 className="pb-4 text-2xl text-secondary font-bold">{title}</h3>
-            <p className="bg-teal-soft px-5 py-5 text-accent-foreground">{text}</p>
-            <div className="h-3 bg-sunny" />
+            <div className="mt-6 flex items-center gap-2 pt-4 border-t border-border/60 text-xs font-bold text-primary">
+              <Sparkles className="size-3.5" />
+              <span>Certified Standard</span>
+            </div>
           </div>
         ))}
       </div>
     </section>
   );
 }
-

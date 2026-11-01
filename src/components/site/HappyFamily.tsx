@@ -245,10 +245,9 @@ export function HappyFamily() {
 
       <div className="relative">
         {/* Section header */}
-        <SectionTab>Real Chats. Real Smiles. 💬</SectionTab>
-        <p className="mx-auto mt-4 max-w-xl text-center text-sm font-semibold text-white/50 px-4">
-          See what our customers share directly on WhatsApp after receiving their new family member 🐾
-        </p>
+        <SectionTab subtitle="Real pet parents sharing unedited photos and heartfelt moments directly on WhatsApp.">
+          Real Chats, Real Tail Wags 💬
+        </SectionTab>
 
         {/* WhatsApp verified badge */}
         <div className="mt-5 flex justify-center">

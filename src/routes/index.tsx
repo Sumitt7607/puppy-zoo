@@ -14,9 +14,9 @@ import { ContactCta } from "@/components/site/ContactCta";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppWidget } from "@/components/site/WhatsAppWidget";
 
-const title = "Puppy ZOO — Buy Healthy Puppies & Dogs Online in India";
+const title = "Puppy ZOO Boutique — Purebred Puppies, Pet Care & Wellness in India";
 const description =
-  "Puppy ZOO connects you with ethically bred, vaccinated and KCI-certified puppies with pan-India safe delivery and free vet support.";
+  "Discover ethically nurtured, KCI-certified purebred puppies at Puppy ZOO Boutique. Featuring white-glove doorstep delivery, 30-point pediatric vet screening, and lifetime parenting support.";
 const siteUrl = "https://puppyzoo.in";
 const ogImage = "https://puppyzoo.in/favicon.png";
 

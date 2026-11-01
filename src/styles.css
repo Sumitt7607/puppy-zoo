@@ -5,8 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Puppy ZOO design system — luxury playful pet marketplace.
- * Vibrant teal / warm orange / rich navy palette, rounded friendly typography.
+ * Puppy ZOO design system — Earthy Nordic Minimalist Pet Boutique & Lifestyle.
+ * Warm terracotta / soothing sage green / soft oat beige / deep espresso palette.
+ * Editorial modern typography and warm organic textures.
  */
 
 @theme inline {
@@ -15,10 +16,10 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
-  --font-display: "Baloo 2", ui-rounded, system-ui, sans-serif;
-  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --radius-3xl: calc(var(--radius) + 14px);
+  --radius-4xl: calc(var(--radius) + 20px);
+  --font-display: "Outfit", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -47,58 +48,69 @@
   --color-cream: var(--cream);
   --color-gold: var(--gold);
   --color-platinum: var(--platinum);
-  --shadow-card: 0 10px 30px -10px oklch(0.3 0.06 240 / 0.15);
-  --shadow-tab: 0 6px 20px -6px oklch(0.3 0.06 240 / 0.25);
-  --shadow-glow: 0 0 25px oklch(0.68 0.19 45 / 0.35);
+  --shadow-card: 0 10px 30px -10px oklch(0.22 0.02 55 / 0.08);
+  --shadow-tab: 0 6px 20px -6px oklch(0.22 0.02 55 / 0.12);
+  --shadow-glow: 0 0 25px oklch(0.58 0.16 42 / 0.25);
 }
 
 :root {
-  --radius: 0.85rem;
-  --background: oklch(0.99 0.005 85);
-  --foreground: oklch(0.2 0.03 250);
+  --radius: 1rem;
+  /* Earthy Nordic Palette: Warm Oat & Soft Linen */
+  --background: oklch(0.985 0.012 85);
+  --foreground: oklch(0.22 0.02 55);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.03 250);
+  --card-foreground: oklch(0.22 0.02 55);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.03 250);
-  --primary: oklch(0.65 0.22 40);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.6 0.15 225);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.96 0.01 240);
-  --muted-foreground: oklch(0.5 0.03 250);
-  --accent: oklch(0.94 0.03 210);
-  --accent-foreground: oklch(0.3 0.06 240);
+  --popover-foreground: oklch(0.22 0.02 55);
+  
+  /* Primary: Warm Clay Terracotta */
+  --primary: oklch(0.58 0.16 42);
+  --primary-foreground: oklch(0.99 0.005 85);
+  
+  /* Secondary: Earthy Sage Green */
+  --secondary: oklch(0.54 0.09 155);
+  --secondary-foreground: oklch(0.99 0.005 85);
+  
+  /* Neutrals: Soft Oat / Stone */
+  --muted: oklch(0.95 0.014 85);
+  --muted-foreground: oklch(0.48 0.025 60);
+  --accent: oklch(0.94 0.025 150);
+  --accent-foreground: oklch(0.28 0.05 150);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.92 0.01 240);
-  --input: oklch(0.92 0.01 240);
-  --ring: oklch(0.65 0.22 40);
-  --teal: oklch(0.62 0.14 215);
-  --teal-foreground: oklch(1 0 0);
-  --teal-soft: oklch(0.94 0.03 210);
-  --navy: oklch(0.28 0.08 250);
-  --navy-foreground: oklch(0.99 0 0);
-  --sunny: oklch(0.9 0.16 95);
-  --cream: oklch(0.98 0.015 85);
-  --gold: oklch(0.84 0.18 85);
-  --platinum: oklch(0.65 0.22 40);
+  --border: oklch(0.90 0.015 80);
+  --input: oklch(0.90 0.015 80);
+  --ring: oklch(0.58 0.16 42);
+
+  /* Themed Color Aliases */
+  --teal: oklch(0.54 0.09 155);
+  --teal-foreground: oklch(0.99 0 0);
+  --teal-soft: oklch(0.94 0.025 150);
+  --navy: oklch(0.22 0.025 60);
+  --navy-foreground: oklch(0.985 0.01 85);
+  --sunny: oklch(0.86 0.12 80);
+  --cream: oklch(0.965 0.018 85);
+  --gold: oklch(0.80 0.14 78);
+  --platinum: oklch(0.58 0.16 42);
 }
 
 .dark {
-  --background: oklch(0.18 0.03 245);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.24 0.03 245);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.24 0.03 245);
-  --popover-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.3 0.03 245);
-  --muted-foreground: oklch(0.75 0.02 245);
-  --accent: oklch(0.32 0.04 230);
-  --accent-foreground: oklch(0.98 0 0);
+  --background: oklch(0.18 0.02 55);
+  --foreground: oklch(0.97 0.01 85);
+  --card: oklch(0.23 0.02 55);
+  --card-foreground: oklch(0.97 0.01 85);
+  --popover: oklch(0.23 0.02 55);
+  --popover-foreground: oklch(0.97 0.01 85);
+  --muted: oklch(0.28 0.02 55);
+  --muted-foreground: oklch(0.72 0.02 85);
+  --accent: oklch(0.30 0.04 150);
+  --accent-foreground: oklch(0.97 0.01 85);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
-  --cream: oklch(0.26 0.03 245);
-  --teal-soft: oklch(0.32 0.04 230);
+  --cream: oklch(0.24 0.02 55);
+  --teal-soft: oklch(0.30 0.04 150);
+  --navy: oklch(0.16 0.02 55);
+  --navy-foreground: oklch(0.985 0.01 85);
 }
 
 @layer base {
@@ -111,6 +123,7 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     scroll-behavior: smooth;
+    letter-spacing: -0.01em;
   }
 
   h1,
@@ -119,18 +132,21 @@
   h4 {
     font-family: var(--font-display);
     font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
 
 @utility section-tab {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   border-radius: 9999px;
-  background: linear-gradient(135deg, var(--color-card) 0%, var(--color-cream) 100%);
-  padding: 0.85rem 2.5rem;
-  box-shadow: 0 8px 25px -8px oklch(0.3 0.06 240 / 0.2);
-  border: 1px solid var(--color-border);
+  background: linear-gradient(135deg, oklch(0.99 0.005 85) 0%, oklch(0.955 0.018 85) 100%);
+  padding: 0.75rem 2.25rem;
+  box-shadow: 0 4px 20px -4px oklch(0.22 0.02 55 / 0.1);
+  border: 1px solid oklch(0.88 0.02 75);
   font-family: var(--font-display);
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--color-foreground);
   letter-spacing: -0.02em;
@@ -140,11 +156,11 @@
   background-color: var(--color-cream);
   background-image: radial-gradient(
       circle at 20% 30%,
-      oklch(0.9 0.05 80 / 0.4) 0 8px,
-      transparent 9px
+      oklch(0.58 0.16 42 / 0.08) 0 6px,
+      transparent 7px
     ),
-    radial-gradient(circle at 75% 70%, oklch(0.9 0.05 80 / 0.35) 0 6px, transparent 7px);
-  background-size: 140px 140px;
+    radial-gradient(circle at 75% 70%, oklch(0.54 0.09 155 / 0.08) 0 5px, transparent 6px);
+  background-size: 110px 110px;
 }
 
 @keyframes floatSlow {
@@ -157,11 +173,10 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 15px rgba(234, 88, 12, 0.4); }
-  50% { box-shadow: 0 0 30px rgba(234, 88, 12, 0.7); }
+  0%, 100% { box-shadow: 0 0 15px oklch(0.58 0.16 42 / 0.3); }
+  50% { box-shadow: 0 0 30px oklch(0.58 0.16 42 / 0.6); }
 }
 
 .glow-pulse {
   animation: pulseGlow 3s infinite;
 }
-

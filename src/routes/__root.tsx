@@ -77,24 +77,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=5" },
-      { title: "Puppy ZOO — Buy Healthy Puppies & Dogs Online in India" },
+      { title: "Puppy ZOO Boutique — Ethical Purebred Puppies & Lifetime Pet Wellness" },
       {
         name: "description",
         content:
-          "Puppy ZOO connects you with ethically bred, vaccinated and KCI-certified puppies and dogs with pan-India safe delivery and free vet support.",
+          "Puppy ZOO Boutique connects loving families with ethically nurtured, vet-certified purebred puppies. Featuring white-glove doorstep delivery and lifetime wellness support.",
       },
       {
         name: "keywords",
         content:
-          "buy puppies online india, kci certified puppies, golden retriever puppy price india, shih tzu puppy buy, dog breeders india, pet store online, buy dogs online india, vaccinated puppies, puppy zoo",
+          "puppy boutique india, buy purebred puppies, kci certified puppies, ethical dog breeders india, golden retriever puppy, toy poodle puppy, shih tzu boutique, doorstep pet delivery, puppy zoo boutique",
       },
-      { name: "author", content: "Puppy ZOO" },
+      { name: "author", content: "Puppy ZOO Boutique" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
-      { name: "theme-color", content: "#0f172a" },
+      { name: "theme-color", content: "#262320" },
       { name: "geo.region", content: "IN" },
       { name: "geo.placename", content: "India" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Puppy ZOO" },
+      { property: "og:site_name", content: "Puppy ZOO Boutique" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@PuppyZooIndia" },
@@ -110,7 +110,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "shortcut icon", href: "/favicon.ico", type: "image/x-icon" },

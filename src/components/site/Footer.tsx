@@ -1,59 +1,77 @@
+import { PawPrint, Heart, Sparkles, Phone, Mail } from "lucide-react";
+import { PHONE_NUMBER } from "@/data/contact";
+
 const columns = [
   {
-    title: "Get a Puppy",
+    title: "Curated Breeds",
     links: [
-      { label: "All Breeds", href: "#breeds" },
-      { label: "Family Dogs", href: "#breeds" },
-      { label: "Guard & Large Dogs", href: "#breeds" },
-      { label: "Toy & Small Dogs", href: "#breeds" },
+      { label: "All Available Breeds", href: "#breeds" },
+      { label: "Gentle Family Dogs", href: "#breeds" },
+      { label: "Velvet Toy & Lap Dogs", href: "#breeds" },
+      { label: "Devoted Guard Dogs", href: "#breeds" },
     ],
   },
   {
-    title: "Services",
+    title: "Boutique Services",
     links: [
-      { label: "Grooming at Home", href: "#services" },
-      { label: "Pet Relocation", href: "#services" },
-      { label: "Puppy Training", href: "#services" },
-      { label: "Vet Consultation", href: "#services" },
+      { label: "In-Home Spa & Grooming", href: "#support" },
+      { label: "Chaperoned Pet Travel", href: "#support" },
+      { label: "Bespoke Nutrition Kits", href: "#support" },
+      { label: "Pediatric Vet Support", href: "#support" },
     ],
   },
   {
-    title: "Company",
+    title: "The Standard",
     links: [
-      { label: "Why Choose Us", href: "#why-choose" },
-      { label: "Happy Families", href: "#happy-family" },
-      { label: "Ethical Breeding", href: "#why-choose" },
-      { label: "Pet Reviews", href: "#testimonials" },
+      { label: "The Boutique Standard", href: "#why-choose" },
+      { label: "How To Buy Online", href: "#how-it-works" },
+      { label: "Parent Stories", href: "#testimonials" },
+      { label: "Live WhatsApp Reviews", href: "#happy-family" },
     ],
   },
   {
-    title: "Help & Contact",
+    title: "Support & Help",
     links: [
-      { label: "Support", href: "#contact" },
-      { label: "Contact Us", href: "#contact" },
-      { label: "FAQs", href: "#faq" },
-      { label: "Privacy Policy", href: "#contact" },
+      { label: "Book Live Video Call", href: "#contact" },
+      { label: "Frequently Asked Questions", href: "#faq" },
+      { label: "Direct Phone Support", href: `tel:${PHONE_NUMBER}` },
+      { label: "Ethical Breeding Charter", href: "#why-choose" },
     ],
   },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-cream py-12">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:grid-cols-2 lg:grid-cols-5">
-        <div>
-          <p className="font-display text-2xl font-extrabold">
-            <span className="text-secondary">Puppy</span>
-            <span className="text-primary"> ZOO</span>
+    <footer className="bg-cream/90 border-t border-border py-14">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="lg:col-span-2">
+          <a href="/" className="inline-flex items-center gap-2">
+            <span className="flex size-9 items-center justify-center rounded-xl bg-primary/10 text-primary border border-primary/20">
+              <PawPrint className="size-5 text-primary" />
+            </span>
+            <span className="font-display text-2xl font-black tracking-tight text-foreground">
+              Puppy<span className="text-primary">ZOO</span>
+            </span>
+          </a>
+          <p className="mt-3 text-xs uppercase tracking-widest font-bold text-secondary">
+            Nordic Canine Boutique & Club
           </p>
-          <p className="mt-3 text-sm text-muted-foreground">
-            India's trusted marketplace for ethically bred, vet-checked puppies & dogs.
+          <p className="mt-2 text-sm text-muted-foreground leading-relaxed max-w-sm">
+            India's premier ethical canine boutique connecting loving families with hand-raised,
+            vet-certified purebred puppies, bespoke starter kits, and lifetime parenting guidance.
           </p>
+          <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-muted-foreground">
+            <Heart className="size-3.5 text-primary fill-primary/20" />
+            <span>100% Ethical, Socialized & Cage-Free</span>
+          </div>
         </div>
+
         {columns.map((c) => (
           <div key={c.title}>
-            <h3 className="font-display font-bold text-lg">{c.title}</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+            <h3 className="font-display font-bold text-sm tracking-wide text-foreground uppercase">
+              {c.title}
+            </h3>
+            <ul className="mt-3.5 space-y-2.5 text-sm text-muted-foreground">
               {c.links.map((l) => (
                 <li key={l.label}>
                   <a href={l.href} className="transition-colors hover:text-primary">
@@ -65,22 +83,17 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="mt-10 flex flex-col items-center justify-center gap-2 text-center text-sm text-muted-foreground sm:flex-row sm:gap-4">
-        <p>© {new Date().getFullYear()} Puppy ZOO. All rights reserved.</p>
-        <span className="hidden sm:inline">•</span>
-        <p>
-          Powered by{" "}
-          <a
-            href="https://www.nexcoretech.online"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground transition-colors hover:text-primary hover:underline"
-          >
-            NexCore Technologies
-          </a>
-        </p>
+
+      <div className="mx-auto max-w-7xl px-4 mt-12 pt-6 border-t border-border/80 flex flex-col items-center justify-between gap-3 text-center text-xs text-muted-foreground sm:flex-row">
+        <p>© {new Date().getFullYear()} Puppy ZOO Boutique. All rights reserved.</p>
+        <div className="flex items-center gap-4">
+          <span>KCI Verified Pedigrees</span>
+          <span>•</span>
+          <span>30-Point Pediatric Clearance</span>
+          <span>•</span>
+          <span>Pan-India Chaperone</span>
+        </div>
       </div>
     </footer>
   );
 }
-
