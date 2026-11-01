@@ -90,7 +90,7 @@ export function Header({
       {/* Main Brand & Search Bar */}
       <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:gap-8">
         <div className="flex items-center justify-between">
-          {/* Logo with Boutique Aesthetic */}
+          {/* Brand Logo */}
           <a
             href="/"
             className="flex items-center gap-2.5 transition-transform hover:scale-102"
@@ -137,7 +137,7 @@ export function Header({
                 }
               }}
               aria-label="Search curated breeds"
-              placeholder="Search 32+ boutique breeds (e.g. Toy Poodle, Golden Retriever, Shih Tzu)..."
+              placeholder="Search 32+ purebred breeds (e.g. Toy Poodle, Golden Retriever, Shih Tzu)..."
               className="w-full rounded-full border border-border bg-background/80 py-2.5 pr-10 pl-11 text-sm font-medium outline-none transition-colors focus:border-primary focus:bg-card focus:ring-2 focus:ring-primary/15"
             />
             {searchQuery && (
@@ -245,7 +245,7 @@ export function Header({
                     : "text-muted-foreground hover:text-foreground")
                 }
               >
-                Boutique Home
+                Home
               </button>
             </li>
 
@@ -291,7 +291,7 @@ export function Header({
               )}
             </li>
 
-            {/* Boutique Collection */}
+            {/* Puppy Collection */}
             <li>
               <button
                 onClick={() => scrollToSection("breeds")}
@@ -307,7 +307,7 @@ export function Header({
                 onClick={() => scrollToSection("why-choose")}
                 className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
               >
-                The Boutique Standard
+                Why Choose Us
               </button>
             </li>
 
@@ -317,7 +317,7 @@ export function Header({
                 onClick={() => scrollToSection("support")}
                 className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
               >
-                Wellness & Pampering
+                Puppy Care & Services
               </button>
             </li>
 
@@ -373,7 +373,7 @@ export function Header({
               }}
               className="block w-full rounded-xl px-4 py-2.5 text-left text-sm font-bold hover:bg-muted"
             >
-              Boutique Home
+              Home
             </button>
             <button
               onClick={() => handleCategorySelect("all")}
@@ -403,13 +403,13 @@ export function Header({
               onClick={() => scrollToSection("why-choose")}
               className="block w-full rounded-xl px-4 py-2.5 text-left text-sm font-bold hover:bg-muted"
             >
-              The Boutique Standard
+              Why Choose Us
             </button>
             <button
               onClick={() => scrollToSection("support")}
               className="block w-full rounded-xl px-4 py-2.5 text-left text-sm font-bold hover:bg-muted"
             >
-              Wellness & Pampering Services
+              Puppy Care & Services
             </button>
             <button
               onClick={() => scrollToSection("how-it-works")}

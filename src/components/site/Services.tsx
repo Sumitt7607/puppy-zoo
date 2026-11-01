@@ -43,8 +43,8 @@ const services = [
 export function Services() {
   return (
     <section id="support" className="bg-cream/70 py-16 scroll-mt-20 border-t border-border">
-      <SectionTab subtitle="Bespoke puppy pampering, dedicated wellness programs, and lifetime companion support for modern pet parents.">
-        The Boutique Experience
+      <SectionTab subtitle="Essential puppy care, dedicated health assurance, and lifetime companion support for pet parents.">
+        Comprehensive Puppy Care
       </SectionTab>
 
       <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,7 +70,7 @@ export function Services() {
               </p>
             </div>
             <div className="mt-5 pt-3 border-t border-border/50 flex items-center gap-1.5 text-xs font-semibold text-secondary">
-              <Sparkles className="size-3" /> Boutique Service Included
+              <Sparkles className="size-3" /> Included with Every Puppy
             </div>
           </div>
         ))}

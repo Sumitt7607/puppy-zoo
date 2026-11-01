@@ -12,7 +12,7 @@ const columns = [
     ],
   },
   {
-    title: "Boutique Services",
+    title: "Puppy Services",
     links: [
       { label: "In-Home Spa & Grooming", href: "#support" },
       { label: "Chaperoned Pet Travel", href: "#support" },
@@ -23,7 +23,7 @@ const columns = [
   {
     title: "The Standard",
     links: [
-      { label: "The Boutique Standard", href: "#why-choose" },
+      { label: "Why Choose Us", href: "#why-choose" },
       { label: "How To Buy Online", href: "#how-it-works" },
       { label: "Parent Stories", href: "#testimonials" },
       { label: "Live WhatsApp Reviews", href: "#happy-family" },
@@ -54,11 +54,11 @@ export function Footer() {
             </span>
           </a>
           <p className="mt-3 text-xs uppercase tracking-widest font-bold text-secondary">
-            Ethical Canine Boutique & Club
+            Trusted Puppy Sale Point in India
           </p>
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed max-w-sm">
-            India's premier ethical canine boutique connecting loving families with hand-raised,
-            vet-certified purebred puppies, bespoke starter kits, and lifetime parenting guidance.
+            India's trusted puppy sale platform connecting loving families with healthy,
+            vet-certified purebred puppies, vaccination records, and lifetime parenting guidance.
           </p>
           <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-muted-foreground">
             <Heart className="size-3.5 text-primary fill-primary/20" />

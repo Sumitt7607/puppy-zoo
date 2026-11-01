@@ -20,7 +20,7 @@ const reviews = [
     name: "Rohan & Nidhi",
     location: "Gurgaon",
     breed: "Chow Chow",
-    text: "The boutique service is unmatched. From our initial WhatsApp chat to the chaperoned home delivery, every detail was handled with genuine affection and veterinary professionalism.",
+    text: "The customer service is unmatched. From our initial WhatsApp chat to the chaperoned home delivery, every detail was handled with genuine care and veterinary professionalism.",
     photo: customer2,
     rating: 5,
   },
@@ -44,7 +44,7 @@ const reviews = [
     name: "Rahul & Smita",
     location: "Pune",
     breed: "Toy Poodle",
-    text: "Flawless boutique experience. Our Toy Poodle arrived in a climate-controlled crate right to our doorstep. She is fluffy, playful, and already potty trained!",
+    text: "Flawless buying experience. Our Toy Poodle arrived in a climate-controlled crate right to our doorstep. She is fluffy, playful, and already potty trained!",
     photo: customer5,
     rating: 5,
   },
@@ -74,7 +74,7 @@ export function Testimonials() {
             <span>Parent Love & Stories</span>
           </div>
           <h2 className="mt-3 font-display text-2xl sm:text-4xl font-extrabold text-navy-foreground">
-            What Boutique Pet Parents Say
+            What Happy Pet Parents Say
           </h2>
           <p className="mt-2 text-sm font-medium text-navy-foreground/75">
             Real families, real puppies, lifelong companionship across India 🐾

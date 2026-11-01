@@ -119,9 +119,9 @@ function BreedCard({ breed, onSelect }: { breed: Breed; onSelect: () => void }) 
           }}
         />
 
-        {/* Boutique Watermark */}
+        {/* Purebred Watermark */}
         <span className="absolute top-3.5 left-3.5 flex items-center gap-1.5 rounded-full bg-navy/80 px-3 py-1 font-display text-xs font-bold tracking-wider text-navy-foreground backdrop-blur-md">
-          <Sparkles className="size-3 text-sunny" /> Boutique Purebred
+          <Sparkles className="size-3 text-sunny" /> Verified Purebred
         </span>
 
         {/* Category Pill */}
