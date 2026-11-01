@@ -43,6 +43,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
       { name: "twitter:image", content: ogImage },
+      { name: "google-site-verification", content: "ahCYoiSyaT_KjyAVdk3NyF9TNJBE7QVCLvbzTxD6hfs" },
     ],
     scripts: [
       {

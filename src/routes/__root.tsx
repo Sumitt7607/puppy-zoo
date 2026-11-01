@@ -98,6 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@PuppySalePoint" },
+      { name: "google-site-verification", content: "ahCYoiSyaT_KjyAVdk3NyF9TNJBE7QVCLvbzTxD6hfs" },
     ],
     links: [
       { rel: "canonical", href: "https://puppiesforsale.shop/" },
