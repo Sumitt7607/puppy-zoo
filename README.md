@@ -1,4 +1,4 @@
-# Puppy Sale Point (puppiesforsale.shop)
+# Puppy Sale Shop (puppiesforsale.shop)
 
 Ethical purebred puppies & dogs platform in India with 30-point pediatric vet screening, KCI verified pedigrees, and pan-India safe doorstep delivery.
 

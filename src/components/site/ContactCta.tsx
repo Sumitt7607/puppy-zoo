@@ -3,7 +3,7 @@ import { PHONE_NUMBER, WHATSAPP_NUMBER } from "@/data/contact";
 
 export function ContactCta() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Hi Puppy Sale Point! I'm interested in finding my ideal puppy companion. Could you help me with available breeds and pricing?"
+    "Hi Puppy Sale Shop! I'm interested in finding my ideal puppy companion. Could you help me with available breeds and pricing?"
   )}`;
 
   return (
@@ -25,7 +25,7 @@ export function ContactCta() {
         </h2>
 
         <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-navy-foreground/80 leading-relaxed font-normal">
-          Connect directly with a Puppy Sale Point advisor today. We will match you with a healthy,
+          Connect directly with a Puppy Sale Shop advisor today. We will match you with a healthy,
           ethically hand-raised puppy companion, schedule your live video playdate, and coordinate white-glove doorstep delivery.
         </p>
 

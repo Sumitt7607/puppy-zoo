@@ -9,7 +9,7 @@ export function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
   const whatsappUrl = `https://wa.me/${CONTACT_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-    "Hi Puppy Sale Point, I would like to inquire about puppy availability, live video playdates, and pricing!"
+    "Hi Puppy Sale Shop, I would like to inquire about puppy availability, live video playdates, and pricing!"
   )}`;
 
   return (
@@ -17,7 +17,7 @@ export function WhatsAppWidget() {
       {/* Call Button — fixed bottom-LEFT */}
       <a
         href={CONTACT_CONFIG.telLink}
-        aria-label="Call Puppy Sale Point Advisor"
+        aria-label="Call Puppy Sale Shop Advisor"
         className="fixed bottom-6 left-6 z-50 flex size-15 items-center justify-center rounded-full text-white shadow-xl transition-transform hover:scale-110 active:scale-95 bg-primary"
         style={{
           boxShadow: "0 8px 25px oklch(0.58 0.16 42 / 0.45)",
@@ -33,7 +33,7 @@ export function WhatsAppWidget() {
           <div className="mb-4 w-76 overflow-hidden rounded-3xl border border-border bg-card shadow-2xl animate-in fade-in slide-in-from-bottom-4">
             <div className="bg-navy p-4 text-navy-foreground">
               <div className="flex items-center gap-2 font-display text-sm font-bold">
-                <Sparkles className="size-4 text-sunny" /> Puppy Sale Point Advisor
+                <Sparkles className="size-4 text-sunny" /> Puppy Sale Shop Advisor
               </div>
               <p className="mt-1 text-xs text-navy-foreground/80">
                 Online Now • Live Video Playdates & Photos
@@ -64,7 +64,7 @@ export function WhatsAppWidget() {
         {/* WhatsApp floating button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Chat on WhatsApp with Puppy Sale Point"
+          aria-label="Chat on WhatsApp with Puppy Sale Shop"
           className="flex size-15 items-center justify-center rounded-full bg-transparent p-0 shadow-xl transition-transform hover:scale-110 active:scale-95"
           style={{ boxShadow: "0 8px 25px rgba(37,211,102,0.45)" }}
         >

@@ -51,11 +51,11 @@ export function Footer() {
               <PawPrint className="size-5 text-primary" />
             </span>
             <span className="font-display text-2xl font-black tracking-tight text-foreground">
-              Puppy <span className="text-primary">Sale Point</span>
+              Puppy <span className="text-primary">Sale Shop</span>
             </span>
           </a>
           <p className="mt-3 text-xs uppercase tracking-widest font-bold text-secondary">
-            Trusted Puppy Sale Point in India
+            Trusted Puppy Sale Shop in India
           </p>
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed max-w-sm">
             India's trusted puppy sale platform connecting loving families with healthy,
@@ -86,7 +86,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto max-w-7xl px-4 mt-12 pt-6 border-t border-border/80 flex flex-col items-center justify-between gap-3 text-center text-xs text-muted-foreground sm:flex-row">
-        <p>© {new Date().getFullYear()} Puppy Sale Point. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Puppy Sale Shop. All rights reserved.</p>
         <div className="flex items-center gap-4">
           <span>KCI Verified Pedigrees</span>
           <span>•</span>

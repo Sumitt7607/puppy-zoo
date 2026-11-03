@@ -15,7 +15,7 @@ export function BreedModal({ breed, onClose }: BreedModalProps) {
   if (!breed) return null;
 
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    `Hi Puppy Sale Point, I would like to book a live video playdate to meet the ${breed.name} puppy (${breed.age ?? "8 Weeks"}).`
+    `Hi Puppy Sale Shop, I would like to book a live video playdate to meet the ${breed.name} puppy (${breed.age ?? "8 Weeks"}).`
   )}`;
 
   return (
@@ -30,7 +30,7 @@ export function BreedModal({ breed, onClose }: BreedModalProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
 
           <span className="absolute top-4 left-4 rounded-full bg-navy/85 px-3.5 py-1 font-display text-xs font-bold text-navy-foreground backdrop-blur-md border border-white/10">
-            Puppy Sale Point Certified
+            Puppy Sale Shop Certified
           </span>
 
           <div className="absolute bottom-4 left-6 right-6">

@@ -10,10 +10,10 @@ import { Sparkles } from "lucide-react";
 const faqs = [
   {
     q: "Where can I find healthy, genuine puppies for sale in India?",
-    a: "Puppy Sale Point (puppiesforsale.shop) is India's premier destination for purebred puppies for sale. We offer healthy, KCI-certified puppies across Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, and 150+ cities with safe doorstep delivery and veterinary health records.",
+    a: "Puppy Sale Shop (puppiesforsale.shop) is India's premier destination for purebred puppies for sale. We offer healthy, KCI-certified puppies across Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, and 150+ cities with safe doorstep delivery and veterinary health records.",
   },
   {
-    q: "Are Puppy Sale Point puppies for sale KCI registered and microchipped?",
+    q: "Are Puppy Sale Shop puppies for sale KCI registered and microchipped?",
     a: "Yes. All our purebred puppies for sale come with official Kennel Club of India (KCI) documentation, verified pedigree records, and an international ISO microchip registered in your family's name for lifelong safety and authenticity.",
   },
   {

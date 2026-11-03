@@ -84,7 +84,7 @@ const chats: Chat[] = [
       { type: "sent", text: "Haha that's every golden's superpower 😂", time: "9:18 AM", ticks: "read" },
       { type: "sent", text: "Please do share his photos with us 🥹", time: "9:18 AM", ticks: "read" },
       { type: "received", text: "Of course! He's become the star of the family 🌟", time: "9:20 AM" },
-      { type: "received", text: "Thank you Puppy Sale Point for this angel 🙏", time: "9:20 AM", liked: true },
+      { type: "received", text: "Thank you Puppy Sale Shop for this angel 🙏", time: "9:20 AM", liked: true },
       { type: "sent", text: "Our pleasure! Happy parenting! 🐶🎉", time: "9:22 AM", ticks: "read" },
     ],
   },
@@ -117,7 +117,7 @@ const chats: Chat[] = [
       { type: "sent", text: "Do send us a video sometime — we'd love to see them!", time: "8:49 AM", ticks: "read" },
       { type: "received", text: "Definitely will! Everyone at home is so happy", time: "8:51 AM" },
       { type: "received", text: "Best investment we ever made 🥹🐶🐶", time: "8:51 AM", liked: true },
-      { type: "sent", text: "This made our day! Thank you for trusting Puppy Sale Point 🙏", time: "8:53 AM", ticks: "read" },
+      { type: "sent", text: "This made our day! Thank you for trusting Puppy Sale Shop 🙏", time: "8:53 AM", ticks: "read" },
     ],
   },
 ];
@@ -162,7 +162,7 @@ function WhatsAppCard({ chat }: { chat: Chat }) {
               <div key={i} className="flex flex-col items-start gap-0.5">
                 <div className="relative max-w-[65%] overflow-hidden rounded-2xl rounded-tl-sm border border-white/5"
                   style={{ background: "#202c33" }}>
-                  <img src={msg.image} alt={`Happy customer with their new ${chat.breed} puppy from Puppy Sale Point`} className="h-40 w-full object-cover object-top" />
+                  <img src={msg.image} alt={`Happy customer with their new ${chat.breed} puppy from Puppy Sale Shop`} className="h-40 w-full object-cover object-top" />
                   <span className="absolute bottom-1.5 right-2 text-[10px] text-white/60">{msg.time}</span>
                 </div>
                 {msg.liked && <span className="ml-2 text-base">❤️</span>}

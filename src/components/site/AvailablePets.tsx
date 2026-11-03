@@ -29,14 +29,14 @@ export function AvailablePets() {
             <div className="relative">
               <img
                 src={pet.img}
-                alt={`${pet.name}, a ${pet.breed} puppy available at Puppy Sale Point`}
+                alt={`${pet.name}, a ${pet.breed} puppy available at Puppy Sale Shop`}
                 width={768}
                 height={768}
                 loading="lazy"
                 className="aspect-square w-full object-cover"
               />
               <span className="absolute top-3 left-3 font-display text-sm font-bold text-primary-foreground drop-shadow">
-                PUPPY SALE POINT
+                PUPPY SALE SHOP
               </span>
               <div className="absolute inset-x-3 bottom-3 flex items-center justify-between">
                 <button className="rounded-md bg-navy/70 px-3 py-2 text-xs font-bold tracking-wide text-navy-foreground">

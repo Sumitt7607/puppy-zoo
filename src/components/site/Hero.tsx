@@ -106,7 +106,7 @@ export function Hero() {
 
   const getSlideWhatsAppUrl = (slide: CarouselSlide) => {
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-      `Hi Puppy Sale Point! I want to inquire about buying the ${slide.breed} for Diwali. Please share live photos, video, and details!`
+      `Hi Puppy Sale Shop! I want to inquire about buying the ${slide.breed} for Diwali. Please share live photos, video, and details!`
     )}`;
   };
 
@@ -162,7 +162,7 @@ export function Hero() {
 
             {/* Sale Subtitle */}
             <p className="mt-3.5 text-base sm:text-lg font-medium leading-relaxed text-muted-foreground">
-              Looking for <strong>puppies for sale</strong>? Puppy Sale Point offers 100% purebred, vaccinated, and KCI-certified puppies online in India with special festive offers.
+              Looking for <strong>puppies for sale</strong>? Puppy Sale Shop offers 100% purebred, vaccinated, and KCI-certified puppies online in India with special festive offers.
               Every puppy comes with a complete 30-point pediatric health certificate, microchip, and guaranteed safe doorstep delivery!
             </p>
 
@@ -180,7 +180,7 @@ export function Hero() {
 
               <a
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                  "Hi Puppy Sale Point! I want to book a live video call to see the available puppies for purchase."
+                  "Hi Puppy Sale Shop! I want to book a live video call to see the available puppies for purchase."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -210,7 +210,7 @@ export function Hero() {
                   <span className="font-bold text-foreground ml-1">4.95 / 5.0</span>
                 </div>
                 <span className="text-muted-foreground font-medium">
-                  <strong>10,000+ Families</strong> bought their puppy through Puppy Sale Point
+                  <strong>10,000+ Families</strong> bought their puppy through Puppy Sale Shop
                 </span>
               </div>
             </div>
@@ -306,7 +306,7 @@ export function Hero() {
                         </a>
                         <a
                           href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                            `Hi Puppy Sale Point! I would like to see live video of the ${activeSlide.breed}. Please schedule a call!`
+                            `Hi Puppy Sale Shop! I would like to see live video of the ${activeSlide.breed}. Please schedule a call!`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"

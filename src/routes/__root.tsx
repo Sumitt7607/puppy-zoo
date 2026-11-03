@@ -77,27 +77,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=5" },
-      { title: "Puppies For Sale — Puppy Sale Point | Buy Purebred Dogs Online" },
+      { title: "Puppies For Sale — Puppy Sale Shop | Buy Purebred Dogs Online" },
       {
         name: "description",
         content:
-          "Looking for puppies for sale? Puppy Sale Point (puppiesforsale.shop) connects loving families with 100% healthy, KCI-certified purebred puppies for sale across India with doorstep delivery & vet check.",
+          "Looking for puppies for sale? Puppy Sale Shop (puppiesforsale.shop) connects loving families with 100% healthy, KCI-certified purebred puppies for sale across India with doorstep delivery & vet check.",
       },
       {
         name: "keywords",
         content:
-          "puppies for sale, puppies for sale near me, puppy sale point, puppiesforsale.shop, buy puppies online, buy puppies india, purebred puppies for sale, golden retriever puppies for sale, shih tzu puppies for sale, toy poodle puppies for sale, labrador puppies for sale, beagle puppies for sale, kci certified puppies",
+          "puppies for sale, puppies for sale near me, puppy sale shop, puppiesforsale.shop, buy puppies online, buy puppies india, purebred puppies for sale, golden retriever puppies for sale, shih tzu puppies for sale, toy poodle puppies for sale, labrador puppies for sale, beagle puppies for sale, kci certified puppies",
       },
-      { name: "author", content: "Puppy Sale Point" },
+      { name: "author", content: "Puppy Sale Shop" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "theme-color", content: "#262320" },
       { name: "geo.region", content: "IN" },
       { name: "geo.placename", content: "India" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Puppy Sale Point" },
+      { property: "og:site_name", content: "Puppy Sale Shop" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@PuppySalePoint" },
+      { name: "twitter:site", content: "@PuppySaleShop" },
       { name: "google-site-verification", content: "ahCYoiSyaT_KjyAVdk3NyF9TNJBE7QVCLvbzTxD6hfs" },
     ],
     links: [
@@ -123,11 +123,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "PetStore",
-          "name": "Puppy Sale Point - Puppies For Sale",
+          "name": "Puppy Sale Shop - Puppies For Sale",
           "url": "https://puppiesforsale.shop",
           "logo": "https://puppiesforsale.shop/favicon.png",
           "image": "https://puppiesforsale.shop/favicon.png",
-          "description": "Puppy Sale Point connects you with ethically bred, vaccinated and KCI-certified puppies for sale with pan-India safe delivery and lifetime vet support.",
+          "description": "Puppy Sale Shop connects you with ethically bred, vaccinated and KCI-certified puppies for sale with pan-India safe delivery and lifetime vet support.",
           "telephone": "+919310025055",
           "priceRange": "₹₹",
           "aggregateRating": {
@@ -152,7 +152,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Puppy Sale Point - Puppies For Sale",
+          "name": "Puppy Sale Shop - Puppies For Sale",
           "url": "https://puppiesforsale.shop",
           "potentialAction": {
             "@type": "SearchAction",
